@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Lorada Scholars Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="Lorada Scholars Academy Logo" class="logo-img">
+                <span class="logo-text">Lorada Scholars Academy</span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li><a href="admissions.html" class="nav-link active">Admissions</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="https://svl-sms.vercel.app/" class="btn-portal" target="_blank" rel="noopener">Portal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Admissions 2026-2027</h1>
+            <p>School Admission Open! - Enroll Your Child Today</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div data-reveal style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); color: white; padding: 3rem; border-radius: 16px; text-align: center; margin-bottom: 3rem;">
+                <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">2026-2027 SESSION</h2>
+                <p style="font-size: 1.5rem; margin-bottom: 0;">SCHOOL ADMISSION OPEN!</p>
+            </div>
+
+            <div class="admissions-content">
+                <div class="admissions-info">
+                    <div class="info-card">
+                        <h2>Admission Process</h2>
+                        <ol class="process-steps">
+                            <li>Contact the school via phone or visit our campus</li>
+                            <li>Complete and submit application form</li>
+                            <li>Submit required documents</li>
+                            <li>Schedule an interview/assessment (for certain grades)</li>
+                            <li>Receive admission decision</li>
+                            <li>Complete enrollment and payment</li>
+                        </ol>
+                    </div>
+
+                    <div class="info-card">
+                        <h2>Required Documents</h2>
+                        <ul class="benefits-list">
+                            <li>Completed application form</li>
+                            <li>Birth certificate or age declaration</li>
+                            <li>Recent passport photographs (2)</li>
+                            <li>Previous school report card (if applicable)</li>
+                            <li>Transfer certificate (for students from other schools)</li>
+                            <li>Medical fitness certificate</li>
+                            <li>Parent/Guardian valid ID</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h2>Grade Levels Available</h2>
+                        <div class="values-grid">
+                            <div class="value-card">
+                                <div class="value-icon">🧸</div>
+                                <h3>Pre-Nursery</h3>
+                                <p>Ages 2-3 years</p>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon">🎨</div>
+                                <h3>Nursery</h3>
+                                <p>Ages 3-4 years</p>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon">📚</div>
+                                <h3>Primary 1-5</h3>
+                                <p>Ages 5-10 years</p>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon">🎯</div>
+                                <h3>JSS 1-2</h3>
+                                <p>Ages 11-13 years (Grades 6-7)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h2>Tuition & Fees</h2>
+                        <p>For detailed information about tuition fees, payment plans, and available discounts, please contact our admissions office.</p>
+                        <p style="margin-top: 1rem;"><strong>Payment Options Available:</strong></p>
+                        <ul class="benefits-list">
+                            <li>One-time full payment</li>
+                            <li>Installment payment plans</li>
+                            <li>Early bird discount available</li>
+                            <li>Sibling discount for multiple enrollments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="application-form-container">
+                    <div class="form-card">
+                        <h2>Quick Inquiry Form</h2>
+                        <p style="color: #6b7280; margin-bottom: 1.5rem;">Fill out this form to receive more information about admissions</p>
+
+                        <form class="inquiry-form" id="admissionsForm">
+                            <div class="form-group">
+                                <label for="parentName">Parent/Guardian Name *</label>
+                                <input type="text" id="parentName" name="parentName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="childName">Child's Full Name *</label>
+                                <input type="text" id="childName" name="childName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Child's Age *</label>
+                                <input type="number" id="age" name="age" min="2" max="13" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="grade">Interested Grade Level *</label>
+                                <select id="grade" name="grade" required>
+                                    <option value="">Select Grade</option>
+                                    <option value="pre-nursery">Pre-Nursery</option>
+                                    <option value="nursery">Nursery</option>
+                                    <option value="primary1">Primary 1</option>
+                                    <option value="primary2">Primary 2</option>
+                                    <option value="primary3">Primary 3</option>
+                                    <option value="primary4">Primary 4</option>
+                                    <option value="primary5">Primary 5</option>
+                                    <option value="jss1">JSS 1 (Grade 6)</option>
+                                    <option value="jss2">JSS 2 (Grade 7)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Additional Information</label>
+                                <textarea id="message" name="message" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Submit Inquiry</button>
+                        </form>
+                    </div>
+
+                    <div class="sidebar-card" style="margin-top: 2rem;">
+                        <h3>Contact Admissions Office</h3>
+                        <p>📞 07777667611<br>📞 08861083452</p>
+                        <p>📧 admissions@loradascholars.edu</p>
+                        <p>📍 Taylor Mayor Compound Road<br>Township of Caldwell</p>
+                        <a href="contact.html" class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">Visit Contact Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Lorada Scholars Academy Logo" class="footer-logo-img">
+                        <span>Lorada Scholars Academy</span>
+                    </div>
+                    <p>Nurturing Minds, Building Future</p>
+                    <p class="footer-contact">📞 07777667611 / 08861083452</p>
+                    <p class="footer-contact">📍 Taylor Mayor Compound Road, Township of Caldwell</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Parent Portal</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Calendar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lorada Scholars Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

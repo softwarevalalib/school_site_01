@@ -1,0 +1,266 @@
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    color: white;
+    padding: 120px 0 80px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease both;
+}
+
+.page-header p {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    animation: fadeInUp 0.6s ease 0.15s both;
+}
+
+/* Content Section */
+.content-section {
+    padding: var(--section-pad, 80px 0);
+    background: #ffffff;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-section h2:first-of-type {
+    margin-top: 0;
+}
+
+.content-section h3 {
+    font-size: 1.5rem;
+    color: #dc2626;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Value cards */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.value-card {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: var(--radius-md, 12px);
+    text-align: center;
+    transition: transform var(--transition-base, 0.3s ease), box-shadow var(--transition-base, 0.3s ease);
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md, 0 4px 6px -1px rgba(0,0,0,0.1));
+}
+
+.value-card:focus-within {
+    outline: 2px solid var(--accent-color, #fbbf24);
+    outline-offset: 2px;
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.value-card h3 {
+    font-size: 1.25rem;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.value-card p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Benefits list */
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.benefits-list li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: #6b7280;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.benefits-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Sidebar cards */
+.about-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-card {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: var(--radius-md, 12px);
+    box-shadow: var(--shadow-sm, 0 1px 2px 0 rgba(0,0,0,0.05));
+    transition: transform var(--transition-base, 0.3s ease), box-shadow var(--transition-base, 0.3s ease);
+}
+
+.sidebar-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md, 0 4px 6px -1px rgba(0,0,0,0.1));
+}
+
+.sidebar-card:focus-within {
+    outline: 2px solid var(--accent-color, #fbbf24);
+    outline-offset: 2px;
+}
+
+.sidebar-logo {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+.sidebar-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.quick-facts {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-facts li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    color: #6b7280;
+}
+
+.quick-facts li:last-child {
+    border-bottom: none;
+}
+
+.quick-facts strong {
+    color: #1f2937;
+}
+
+/* CTA card */
+.cta-card {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    text-align: center;
+}
+
+.cta-card h3 {
+    color: white;
+}
+
+.cta-card p {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 1.5rem;
+}
+
+.cta-card .btn {
+    background: white;
+    color: #dc2626;
+}
+
+/* Programs Page */
+.program-detail-card {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: var(--radius-lg, 16px);
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    transition: transform var(--transition-base, 0.3s ease), box-shadow var(--transition-base, 0.3s ease), border-color var(--transition-base, 0.3s ease);
+}
+
+.program-detail-card:hover {
+    border-color: #dc2626;
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg, 0 10px 15px -3px rgba(0,0,0,0.1));
+}
+
+.program-detail-card:focus-within {
+    outline: 2px solid var(--accent-color, #fbbf24);
+    outline-offset: 2px;
+}
+
+.program-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.program-header .program-icon {
+    font-size: 4rem;
+}
+
+.program-header h2 {
+    margin: 0;
+}
+
+/* Info card (admissions, contact) */
+.info-card {
+    transition: transform var(--transition-base, 0.3s ease), box-shadow var(--transition-base, 0.3s ease);
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md, 0 4px 6px -1px rgba(0,0,0,0.1));
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header {
+        padding: 100px 0 60px;
+    }
+
+    .program-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .program-header .program-icon {
+        font-size: 3rem;
+    }
+}
